@@ -1,29 +1,30 @@
-# Flow Check-In
+# The Flow Check-In
 
 _A daily conversation to keep work moving and catch flow problems before they grow._
 
 ## Purpose of the Flow Check-In
 
-The flow check-in is a daily conversation about your system's health. On a good day, this takes five minutes. If it’s consistently taking longer, that’s useful information about your flow.
+The flow check-in is a daily conversation about your system's health. On a good day, this takes five minutes. If it's consistently taking longer, that's useful information about your flow.
 
 ## What You Need
 
-| Artefact                       | What you're looking for                                                                                                                                                                                                                                                                                                      |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Kanban board (live)**        | An honest picture of all in-flight work. If it isn't on the board, it doesn't exist in your flow data. Confirm it reflects reality before the check-in begins.                                                                                                                                                               |
-| **Work Item Age chart**        | **Approaching or past SLE**: items in the danger zone that need attention or a plan. <br>**Stale items**: work that hasn't visibly moved in several days, regardless of where it sits against the SLE. These are the items most likely to become tomorrow's ageing problem. If nobody's mentioned it recently, ask about it. |
-| **Ticket details (as needed)** | Only pull these up when a specific item needs context, not as a default screen share for every ticket in turn.                                                                                                                                                                                                               |
+|Artefact|What you're looking for|
+|---|---|
+|**Kanban board (live)**|An honest picture of all in-flight work. If it isn't on the board, it doesn't exist in your flow data. Confirm it reflects reality before the check-in begins.|
+|**Work Item Age chart**|**Approaching or past SLE**: items in the danger zone that need attention or a plan.  <br>**Stale items**: work that hasn't visibly moved in several days, regardless of where it sits against the SLE. These are the items most likely to become tomorrow's ageing problem. If nobody's mentioned it recently, ask about it.|
+|**Ticket details (as needed)**|Only pull these up when a specific item needs context, not as a default screen share for every ticket in turn.|
 
 ## Running Order
 
-| Step | Section                                            | Aim for |
-| ---- | -------------------------------------------------- | --------- |
-| 0 | Before we look at the board                        | 1 min |
-| 1 | What's stuck or ageing?                            | 3–5 mins |
-| 2a | Are we within our WIP limits?                      | 1 min |
-| 2b | Are we using our pull criteria and policies?       | 1 min |
-| 3 | What's moving today?                               | 1–2 mins |
-| — | After-party *(optional, and specific people only)* | 5–10 mins |
+|Step|Section|Aim for|
+|---|---|---|
+|0|Before we look at the board|1 min|
+|1|What's stuck or ageing?|3–5 mins|
+|2a|Are we within our WIP limits?|1 min|
+|2b|Are we using our pull criteria and policies?|1 min|
+|2c|Does anyone need to replenish?|1 min|
+|3|What's moving today?|1–2 mins|
+|—|After-party _(optional, and specific people only)_|5–10 mins|
 
 If any step is consistently running over, that's the signal, not a reason to allow more time.
 
@@ -39,14 +40,13 @@ This isn't bureaucracy. Work that isn't on the board doesn't exist in your flow 
 
 ## Step 1: What's Stuck or Ageing?
 
-Open the Work Item Age chart. Start with the oldest items, not the first column.
-You're looking through three lenses, each of which catches something the others miss.
+Open the Work Item Age chart. Start with the oldest items, not the first column. You're looking through three lenses, each of which catches something the others miss.
+
 ### Lens 1: Overall Age (SLE)
 
 This tells you whether an item is at risk of breaching your service level expectation:
 
-**At 50% of SLE:** flag it. Is the next step clear and assigned to someone?
-**At 70% of SLE:** everything else waits. The team swarms on this until it moves.
+**At 50% of SLE:** flag it. Is the next step clear and assigned to someone? **At 70% of SLE:** everything else waits. The team swarms on this until it moves.
 
 ### Lens 2: Stage Pace
 
@@ -56,18 +56,17 @@ This tells you whether an item is moving slower than normal _for its current col
 
 ### Lens 3: Staleness
 
-This tells you whether an item has been touched recently, regardless of where it sits on age or pace. Staleness is configured per team (x days without movement).
+This tells you whether an item has been touched recently, regardless of where it sits in terms of age or pace. Staleness is configured per team (x days without movement).
 
 **At or beyond the staleness threshold:** the item isn't progressing. These surface quietly. Make them visible and ask: who's next, and what do they need?
 
-**A note on why three lenses matter**
-An item can look fine on one lens and be in trouble on another. Within SLE but stale? Quietly rotting. Fast-ageing but moving well by pace? The stage is just genuinely slow. You need all three to see the full picture.
+**A note on why three lenses matter**: An item can look fine through one lens but be in trouble through another. Within SLE, but stale? Quietly rotting. Fast-ageing but moving well by pace? The stage is just genuinely slow. You need all three to see the full picture.
 
 ### Blocked Items
 
 An item is blocked when a specific, named impediment is preventing meaningful progress and cannot be resolved through normal team action without increasing risk to other work. If there's no named impediment, it isn't blocked, it's ageing. Treat it as ageing.
 
-**Level 1: blocked, actively seeking to resolve:** the item counts against WIP. The blocker is named, tagged, and someone owns escalation today. The discomfort is intentional, WIP pressure drives urgency. Raise it at every check-in until resolved.
+**Level 1: blocked, actively seeking to resolve:** the item counts against WIP. The blocker is named and tagged, and someone owns the escalation today. The discomfort is intentional; WIP pressure drives urgency. Raise it at every check-in until resolved.
 
 **Level 2: blocked, resolution expected:** the escalation window has passed (team-agreed, typically 5–10 days). The team has deliberately chosen to pull new work. The item remains on the board, visibly ages, and is reviewed at every flow review. Level 2 requires a stateable resolution path, a specific person, team, decision, or event that will unblock it. If you can't state that, it isn't Level 2.
 
@@ -86,7 +85,22 @@ A quick scan. Either you are, or you aren't.
 
 Work moves because it meets agreed criteria, not because it feels ready. If anyone is unsure what those criteria are, that's worth thirty seconds now rather than a rework conversation later.
 
-The expedite policy applies too: one item at a time, swarmed until done.
+The expedite policy applies too: one item at a time (or however the team have defined it), swarmed until done.
+
+## Step 2c: Does Anyone Need to Replenish?
+
+This is the JIT replenishment conversation. If Steps 2a and 2b have confirmed that the team is within WIP limits and policies are understood, this is the moment to ask: Does anyone need work?
+
+- **"Is anyone looking for work?"** — If yes, what is the next item to pull, and does it meet the ready criteria?
+- **"Does anyone have capacity they can offer?"** — If a team member finishes an item today and will need something next, surface that now rather than discovering it tomorrow.
+
+The pull decision should be based on priority and business value, not on whoever grabs the next ticket first. If the team has a prioritised backlog, the answer should be straightforward: the next item is the next item.
+
+If someone needs work but nothing in the backlog is ready, that's worth a brief conversation about backlog readiness — not a long one, and not a refinement session. Name the gap, note it, and move on.
+
+If the answer is no — everyone is occupied and within WIP limits — move on. This should take thirty seconds or less on most days.
+
+> **The distinction:** Step 2b checks whether policies are being followed. Step 2c asks whether anyone is ready to act on them. One is about the rules; the other is about the signal.
 
 ## Step 3: What's Moving Today?
 
@@ -100,14 +114,16 @@ Some conversations are worth having, just not with the whole team, and not insid
 
 When a specific item needs more than a sentence or two, an investigation, a quick joint decision on a blocker, two people who need to align on something before it can move, close the check-in on time and invite the relevant people to stay on. Everyone else is free to go.
 
-> **The signal to use it:** *"This needs three of us for five minutes, can you stay on after?"* Not: *"Let's just sort this now while we're all here."*
+> **The signal to use it:** _"This needs three of us for five minutes, can you stay on after?"_ Not: _"Let's just sort this now while we're all here."_
 
 **The after-party is for:**
+
 - Specific operational depth: a blocker that needs a quick decision, an investigation that needs two people to look at it together, a handover that's easier live than async.
 - Conversations relevant to two or three people, not the whole team.
 - Five to ten minutes. Time-boxed.
 
 **The after-party is not for:**
+
 - Systemic patterns, those go to the flow review (see below).
 - Design or architecture decisions, those need the right people and the right time, not whatever is left over after standup.
 - Anything that the whole team should hear, if everyone needs to know, it belongs in the check-in, not after it.
@@ -119,6 +135,7 @@ If the after-party is becoming a regular fixture, or lasting longer than ten min
 Most questions should have short answers. When they don't, that's the signal.
 
 Common triggers for a longer conversation:
+
 - Multiple items ageing simultaneously across the same stage
 - The same blocker types are surfacing repeatedly
 - WIP consistently at or over the limit
@@ -142,7 +159,7 @@ A check-in where only the DM can see the metrics, only the DM surfaces the agein
 
 1. **Everyone can see the artefacts.** The board and the Work Item Age chart are visible to the whole team, not just the facilitator. Shared sight is the precondition for shared understanding. If the DM is the only person looking at the metrics, the team will never develop the instinct to read them.
 
-2. **The team surfaces the signals, not the DM.** The facilitator's job is to ask, not to tell. *"What's the oldest thing on the board right now?"* is a better question than naming it yourself. If the team can't answer without being prompted, the practice isn't embedded yet; that's the next thing to work on, not a reason to keep answering for them.
+2. **The team surfaces the signals, not the DM.** The facilitator's job is to ask, not to tell. _"What's the oldest thing on the board right now?"_ is a better question than naming it yourself. If the team can't answer without being prompted, the practice isn't embedded yet; that's the next thing to work on, not a reason to keep answering for them.
 
 3. **Someone other than the DM can run it.** Until a team member facilitates the check-in themselves, with the DM present but silent, the practice is DM-dependent, not team-owned. Rotation isn't just good for resilience; it's the mechanism by which the team internalises the practice rather than observing it.
 
