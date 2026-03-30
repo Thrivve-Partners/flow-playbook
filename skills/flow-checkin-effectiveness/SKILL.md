@@ -7,7 +7,7 @@ description: Evaluates standup (Flow Check-in) transcript effectiveness against 
 
 ## Purpose
 
-Evaluate standup (Flow Check-in) transcripts against the standards defined in `flow-check-in.md` and provide actionable coaching feedback with an effectiveness score.
+Evaluate standup (Flow Check-in) transcripts against the standards defined in `Flow Checkin.md` and provide actionable coaching feedback with an effectiveness score.
 
 This skill helps identify:
 - Which flow practices are working well (with evidence)
@@ -18,13 +18,13 @@ This skill helps identify:
 ## When to Use This Skill
 
 Use this skill when you have:
-- A standup transcript to analyse
+- A standup transcript to analyze
 - Questions about standup effectiveness
 - Need for coaching feedback on flow practices
 - Want to track standup improvement over time
 
 **Trigger phrases:**
-- "Analyse this standup transcript"
+- "Analyze this standup transcript"
 - "Evaluate flow check-in effectiveness"
 - "Score this standup"
 - "Review our daily standup"
@@ -33,7 +33,7 @@ Use this skill when you have:
 ## Input Required
 
 **Essential:**
-1. **Standup transcript file path** - The transcription to analyse
+1. **Standup transcript file path** - The transcription to analyze
 
 **Optional (provides context):**
 2. **Team context:**
@@ -49,7 +49,7 @@ The skill evaluates standups against **6 core areas** totalling **10 points:**
 ### 1. Invisible Work Check (1 point)
 Did the team check for work not on the board? Was the 30-minute rule applied?
 
-**Reference:** flow-check-in.md - "Before We Look at the Board"
+**Reference:** Flow Checkin.md - "Before We Look at the Board"
 
 ### 2. Question 1: What's Stuck or Ageing? (3 points)
 **a) Ageing Items Identified (1 point):** Are they walking oldest items first? Referencing age metrics?
@@ -58,31 +58,31 @@ Did the team check for work not on the board? Was the 30-minute rule applied?
 
 **c) Swarming on Ageing Work (1 point):** When work isn't moving, does the team offer to swarm?
 
-**Reference:** flow-check-in.md - "The Three Questions - 1. What's stuck or ageing?"
+**Reference:** Flow Checkin.md - "The Three Questions - 1. What's stuck or ageing?"
 
 ### 3. Question 2: WIP Limits & Policies (2 points)
 **a) WIP Limit Check (1 point):** Did they check if they're within WIP limits?
 
 **b) Pull Policy & Criteria (1 point):** Is "finish before pull" applied? Are pull criteria referenced?
 
-**Reference:** flow-check-in.md - "The Three Questions - 2. Are we within our WIP limits, and using our Policies effectively?"
+**Reference:** Flow Checkin.md - "The Three Questions - 2. Are we within our WIP limits, and using our Policies effectively?"
 
 ### 4. Question 3: What's Moving Today? (1 point)
 Is the team clear on what progresses today? Do people leave knowing exactly what they're working on?
 
-**Reference:** flow-check-in.md - "The Three Questions - 3. What's moving today?"
+**Reference:** Flow Checkin.md - "The Three Questions - 3. What's moving today?"
 
 ### 5. Pattern Recognition (1 point)
 Are recurring patterns noted for flow review (not solved in standup)?
 
-**Reference:** flow-check-in.md - "When the Conversation Goes Deeper"
+**Reference:** Flow Checkin.md - "When the Conversation Goes Deeper"
 
 ### 6. Overall Health (2 points)
 **a) Routine Feel & Honest Board (1 point):** Does it feel routine? Is work moving? Are blockers named early?
 
 **b) Clear Next Steps (1 point):** Does the team leave knowing exactly what the day looks like?
 
-**Reference:** flow-check-in.md - "What Good Looks Like"
+**Reference:** Flow Checkin.md - "What Good Looks Like"
 
 ## Detailed Scoring Criteria
 
@@ -98,9 +98,9 @@ List positive observations with evidence:
   - **Why this matters:** [Reference to Flow Check-in standard]
 
 **Example:**
-- **Swarming Visible:** Facilitator explicitly asked who could help an ageing item
-  - **Evidence:** "Can we swarm on this to do please? Who's got capacity?"
-  - **Why this matters:** Flow Check-in standard - "Work as a team on what's already in flight" (Question 1c)
+- **Swarming Visible:** Louise recognised team helping each other
+  - **Evidence:** "I really like the way that we've been working this week and gurgling down. Leila, you've been helping Shweta"
+  - **Why this matters:** Flow Check-in standard - "Work as a team on what's already in flight" (Question 2)
 
 ### 2. What Could Be Improved
 List gaps identified with evidence:
@@ -110,7 +110,7 @@ List gaps identified with evidence:
 
 **Example:**
 - **No Work Item Age Focus:** Standup walked columns, not age
-  - **Evidence:** Board walk: "Ready for Release → In Test → In Development" (no mention of age)
+  - **Evidence:** Board walk: "Ready for Release → NF Testing → In Test → In Development" (no mention of age)
   - **Flow Check-in standard:** "Look at the board and identify anything that isn't moving as expected. At 50% of SLE: flag it." (Question 1)
 
 ### 3. Coaching Opportunities
@@ -123,7 +123,7 @@ Specific, actionable suggestions with references:
 **Example:**
 - **Introduce Age-Based Walk:** Start standup with Work Item Age chart
   - **When:** At standup start (before column walk)
-  - **What to say:** "Let's start with the Work Item Age chart — what's the oldest item on the board?"
+  - **What to say:** "Let's start with the Work Item Age chart - what's the oldest item on the board?"
   - **Reference:** Question 1 - "Look at the board and identify anything that isn't moving as expected"
 
 ### 4. Effectiveness Score
@@ -146,11 +146,11 @@ Specific, actionable suggestions with references:
    - Clear next steps: X/1
 
 **Interpretation:**
-- **8-10:** Excellent — Flow Check-in standards well embedded, minor refinements only
-- **6-7:** Good — Core practices present, needs consistent application
-- **4-5:** Developing — Some practices emerging, significant coaching needed
-- **2-3:** Early — Few practices present, intensive coaching required
-- **0-1:** Not Present — Flow Check-in standards not yet introduced
+- **8-10:** Excellent - Flow Check-in standards well embedded, minor refinements only
+- **6-7:** Good - Core practices present, needs consistent application
+- **4-5:** Developing - Some practices emerging, significant coaching needed
+- **2-3:** Early - Few practices present, intensive coaching required
+- **0-1:** Not Present - Flow Check-in standards not yet introduced
 
 **Key Priority for Next Session:**
 [1-2 most impactful coaching opportunities]
@@ -158,7 +158,7 @@ Specific, actionable suggestions with references:
 ## How to Use This Skill
 
 1. **Read the standup transcript** (provided by user)
-2. **Read flow-check-in.md** to refresh on standards (in the `practices/` folder of this repo)
+2. **Read Flow Checkin.md** to refresh on standards (located in same directory as this skill)
 3. **Evaluate transcript** against each criterion using the detailed rubric (see `references/flow-checkin-rubric.md`)
 4. **Capture evidence** (direct quotes) for each observation
 5. **Generate output** in the structure above
@@ -171,20 +171,20 @@ Specific, actionable suggestions with references:
 - **Reference standards:** Cite specific Flow Check-in sections
 - **Be actionable:** Coaching should be specific enough to apply in next standup
 - **Context matters:** Consider team context (week in pilot, established practices)
-- **Honest assessment:** Don't inflate scores — gaps are coaching opportunities
-- **UK British English:** Use British spelling (organised, recognise, behaviour, prioritise, ageing, etc.) and conventions throughout all output
+- **Honest assessment:** Don't inflate scores - gaps are coaching opportunities
+- **UK British English:** Use British spelling (organised, recognise, behaviour, prioritise, etc.) and conventions throughout all output
 
-## Score Trajectory
+## Example Analyses
 
-Where multiple sessions are being tracked for a team, maintain a score trajectory table in the output:
+See these example analyses for reference on output structure and level of detail:
+- `03-Pilot-Execution/Coaching-Sessions/Platform 2/Platform-2-Flow-Checkin-Analysis-20260227.md` (Score: 2.5/10 - Early)
+- `03-Pilot-Execution/Coaching-Sessions/C2C/C2C-Flow-Checkin-Analysis-20260302.md` (Score: 5.5/10 - Developing)
 
-```
-| Date | Score | Facilitator | Key driver |
-|------|-------|-------------|-----------|
-| DD Mon | X.X/10 | [Name] | [One-line summary of what drove the score] |
-```
-
-This makes coaching progress visible over time and helps identify whether practices are becoming team-owned or remain facilitator-dependent.
+These demonstrate:
+- How to structure evidence-based observations
+- Appropriate level of detail in coaching opportunities
+- How to use British English throughout
+- Progression from Early (2.5) to Developing (5.5) over 3 weeks of coaching
 
 ## Troubleshooting
 
@@ -200,10 +200,7 @@ This makes coaching progress visible over time and helps identify whether practi
 **Issue:** Multiple things need improvement
 **Solution:** Prioritise 1-2 highest-impact coaching opportunities in "Key Priority for Next Session". Don't overwhelm the team.
 
-**Issue:** Facilitator changes between sessions
-**Solution:** Note the facilitator in the score trajectory. A drop in score when a different facilitator runs the session is a signal that practices are facilitator-dependent rather than team-owned — a key coaching observation in its own right.
-
 ## References
 
-- **practices/flow-check-in.md** — The standards document defining all evaluation criteria
-- **references/flow-checkin-rubric.md** — Detailed scoring criteria and examples for each evaluation area
+- **Flow Checkin.md** - The standards document defining all evaluation criteria
+- **references/flow-checkin-rubric.md** - Detailed scoring criteria and examples for each evaluation area
