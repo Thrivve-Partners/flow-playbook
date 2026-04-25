@@ -143,3 +143,4 @@ For questions or issues:
 ## Version
 
 v1.0.0 - Initial release (March 2026)
+v1.1.0 - Changes based on v1.4 of the Flow Checkin
