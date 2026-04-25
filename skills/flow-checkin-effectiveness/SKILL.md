@@ -7,7 +7,7 @@ description: Evaluates standup (Flow Check-in) transcript effectiveness against 
 
 ## Purpose
 
-Evaluate standup (Flow Check-in) transcripts against the standards defined in `Flow Checkin.md` and provide actionable coaching feedback with an effectiveness score.
+Evaluate standup (Flow Check-in) transcripts against the standards defined in the Flow Check-In guide (v1.4) and provide actionable coaching feedback with an effectiveness score.
 
 This skill helps identify:
 - Which flow practices are working well (with evidence)
@@ -44,49 +44,46 @@ Use this skill when you have:
 
 ## Evaluation Framework
 
-The skill evaluates standups against **6 core areas** totalling **10 points:**
+The skill evaluates standups against **10 criteria** totalling **10 points**, aligned to the Flow Check-In v1.4 running order:
 
-### 1. Invisible Work Check (1 point)
-Did the team check for work not on the board? Was the 30-minute rule applied?
+### 1. Step 0 — Invisible Work Check (1 point)
+Did the team check for work not on the board before the board walk? Was the 30-minute rule applied?
 
-**Reference:** Flow Checkin.md - "Before We Look at the Board"
+### 2. Step 1 — Finishing Focus / Right-to-Left Walk (1 point)
+Did the facilitator open the board walk with the last column (ready-for-release or equivalent) and work right-to-left? Was the framing about finishing and helping to land, not about ageing risk? A walk that opens with pace-percentile-ordered ageing items, or column-by-column from the left, does not meet the v1.4 Step 1 standard.
 
-### 2. Question 1: What's Stuck or Ageing? (3 points)
-**a) Ageing Items Identified (1 point):** Are they walking oldest items first? Referencing age metrics?
+### 3. Step 2a — Ageing Items: Three Lenses (1 point)
+Are they using the three lenses from the v1.4 standard?
+- **Lens 1 — Overall Age (SLE):** Items flagged at 50% and 70% of SLE?
+- **Lens 2 — Stage Pace:** Pace percentiles referenced? Items beyond 70th pace percentile flagged?
+- **Lens 3 — Staleness:** Staleness threshold applied? Stale items surfaced?
 
-**b) Blocker Management (1 point):** Are blockers specifically named, owned, and categorised (Level 1/2/3)?
+Two or more lenses used systematically = full mark. One lens = partial.
 
-**c) Swarming on Ageing Work (1 point):** When work isn't moving, does the team offer to swarm?
+### 4. Step 2b — Blocker Management (1 point)
+Are blockers named, owned, and categorised (Level 1/2/3)? Is the blocked-vs-ageing distinction applied?
 
-**Reference:** Flow Checkin.md - "The Three Questions - 1. What's stuck or ageing?"
+### 5. Step 2c — Swarming on Ageing Work (1 point)
+When work isn't moving, does the team swarm? At 70% SLE, does everything else wait?
 
-### 3. Question 2: WIP Limits & Policies (2 points)
-**a) WIP Limit Check (1 point):** Did they check if they're within WIP limits?
+### 6. Step 3a — WIP Limit Check (1 point)
+Stage-level WIP scan? Over/under addressed?
 
-**b) Pull Policy & Criteria (1 point):** Is "finish before pull" applied? Are pull criteria referenced?
+### 7. Step 3b — Pull Criteria & Policies (1 point)
+Finish-before-pull applied? Pull criteria referenced? Ticket movement discipline?
 
-**Reference:** Flow Checkin.md - "The Three Questions - 2. Are we within our WIP limits, and using our Policies effectively?"
+### 8. Step 3c — Replenishment (1 point)
+Explicit replenishment question asked ("Does anyone need work?")? Next item identified by priority/business value? Backlog readiness discussed if needed?
 
-### 4. Question 3: What's Moving Today? (1 point)
-Is the team clear on what progresses today? Do people leave knowing exactly what they're working on?
+### 9. Step 4 — What's Moving Today (1 point)
+Structured close with per-person commitments? Everyone leaves knowing what they're working on?
 
-**Reference:** Flow Checkin.md - "The Three Questions - 3. What's moving today?"
-
-### 5. Pattern Recognition (1 point)
-Are recurring patterns noted for flow review (not solved in standup)?
-
-**Reference:** Flow Checkin.md - "When the Conversation Goes Deeper"
-
-### 6. Overall Health (2 points)
-**a) Routine Feel & Honest Board (1 point):** Does it feel routine? Is work moving? Are blockers named early?
-
-**b) Clear Next Steps (1 point):** Does the team leave knowing exactly what the day looks like?
-
-**Reference:** Flow Checkin.md - "What Good Looks Like"
+### 10. Session Texture — Integrated Walk + After-Party + Routine Feel (1 point)
+Is this one integrated conversation walking the board, or two events shoved together (a chart narration followed by a per-person status round)? When depth is needed, is the after-party used? Does the session feel routine and team-owned, or DM-narrated with the team listening?
 
 ## Detailed Scoring Criteria
 
-For detailed scoring criteria, evidence to capture, and examples for each section, see:
+For detailed scoring criteria, evidence to capture, and examples for each criterion, see:
 `references/flow-checkin-rubric.md`
 
 ## Output Structure
@@ -98,9 +95,9 @@ List positive observations with evidence:
   - **Why this matters:** [Reference to Flow Check-in standard]
 
 **Example:**
-- **Swarming Visible:** Louise recognised team helping each other
-  - **Evidence:** "I really like the way that we've been working this week and gurgling down. Leila, you've been helping Shweta"
-  - **Why this matters:** Flow Check-in standard - "Work as a team on what's already in flight" (Question 2)
+- **Finishing Focus:** Facilitator opened the walk with the last column
+  - **Evidence:** *"What's in ready-for-release? Can anything cross the line today?"*
+  - **Why this matters:** Flow Check-in v1.4 Step 1 — *"Walk the board from right to left. Start with the last column before done."*
 
 ### 2. What Could Be Improved
 List gaps identified with evidence:
@@ -109,9 +106,9 @@ List gaps identified with evidence:
   - **Flow Check-in standard:** [Reference to specific section]
 
 **Example:**
-- **No Work Item Age Focus:** Standup walked columns, not age
-  - **Evidence:** Board walk: "Ready for Release → NF Testing → In Test → In Development" (no mention of age)
-  - **Flow Check-in standard:** "Look at the board and identify anything that isn't moving as expected. At 50% of SLE: flag it." (Question 1)
+- **Ageing-First Walk (v1.4 anti-pattern):** Standup walked pace-percentile descending, not right-to-left
+  - **Evidence:** *"Let's go based on the pace percentile. The highest one on this list at the minute is..."*
+  - **Flow Check-in v1.4:** Step 1 — *"Walk the board from right to left. Start with the last column before done."*
 
 ### 3. Coaching Opportunities
 Specific, actionable suggestions with references:
@@ -121,44 +118,45 @@ Specific, actionable suggestions with references:
   - **Reference:** [Flow Check-in section]
 
 **Example:**
-- **Introduce Age-Based Walk:** Start standup with Work Item Age chart
-  - **When:** At standup start (before column walk)
-  - **What to say:** "Let's start with the Work Item Age chart - what's the oldest item on the board?"
-  - **Reference:** Question 1 - "Look at the board and identify anything that isn't moving as expected"
+- **Flip the Walk Order:** Start with ready-for-release, walk back through the board
+  - **When:** At the opening of Step 1, every session
+  - **What to say:** *"What's in ready-for-release? Can anything cross the line today? Then one step back — what's in test or review?"*
+  - **Reference:** Flow Check-in v1.4 Step 1 — *"Walk the board from right to left. Start with the last column before done."*
 
 ### 4. Effectiveness Score
 
 **Score: X/10**
 
 **Breakdown:**
-1. Invisible Work Check: X/1
-2. Question 1 (Stuck/Ageing): X/3
-   - Ageing items identified: X/1
-   - Blocker management: X/1
-   - Swarming on ageing work: X/1
-3. Question 2 (WIP & Policies): X/2
-   - WIP limit check: X/1
-   - Pull policy & criteria: X/1
-4. Question 3 (Moving Today): X/1
-5. Pattern Recognition: X/1
-6. Overall Health: X/2
-   - Routine feel & honest board: X/1
-   - Clear next steps: X/1
+
+| # | Area | Score | Notes |
+|---|------|-------|-------|
+| 1 | Invisible Work Check | X/1 | |
+| 2 | Finishing Focus / Right-to-Left Walk | X/1 | |
+| 3 | Ageing Items — Three Lenses | X/1 | |
+| 4 | Blocker Management | X/1 | |
+| 5 | Swarming on Ageing Work | X/1 | |
+| 6 | WIP Limit Check | X/1 | |
+| 7 | Pull Criteria & Policies | X/1 | |
+| 8 | Replenishment | X/1 | |
+| 9 | What's Moving Today | X/1 | |
+| 10 | Session Texture | X/1 | |
+| | **Total** | **X/10** | |
 
 **Interpretation:**
-- **8-10:** Excellent - Flow Check-in standards well embedded, minor refinements only
-- **6-7:** Good - Core practices present, needs consistent application
-- **4-5:** Developing - Some practices emerging, significant coaching needed
-- **2-3:** Early - Few practices present, intensive coaching required
-- **0-1:** Not Present - Flow Check-in standards not yet introduced
+- **8–10:** Excellent — Flow Check-in standards well embedded, minor refinements only
+- **6–7:** Good — Core practices present, needs consistent application
+- **4–5:** Developing — Some practices emerging, significant coaching needed
+- **2–3:** Early — Few practices present, intensive coaching required
+- **0–1:** Not Present — Flow Check-in standards not yet introduced
 
 **Key Priority for Next Session:**
-[1-2 most impactful coaching opportunities]
+[1–2 most impactful coaching opportunities]
 
 ## How to Use This Skill
 
 1. **Read the standup transcript** (provided by user)
-2. **Read Flow Checkin.md** to refresh on standards (located in same directory as this skill)
+2. **Read the Flow Check-In v1.4 guide** to refresh on standards (located at `01-Client-Intelligence/Reference/Standards/Flow Checkin v1.4.md`)
 3. **Evaluate transcript** against each criterion using the detailed rubric (see `references/flow-checkin-rubric.md`)
 4. **Capture evidence** (direct quotes) for each observation
 5. **Generate output** in the structure above
@@ -168,23 +166,29 @@ Specific, actionable suggestions with references:
 ## Important Guidelines
 
 - **Be evidence-based:** Always quote directly from transcript
-- **Reference standards:** Cite specific Flow Check-in sections
+- **Reference standards:** Cite specific Flow Check-in v1.4 sections (Step 0, Step 1, etc.)
 - **Be actionable:** Coaching should be specific enough to apply in next standup
 - **Context matters:** Consider team context (week in pilot, established practices)
-- **Honest assessment:** Don't inflate scores - gaps are coaching opportunities
+- **Honest assessment:** Don't inflate scores — gaps are coaching opportunities
 - **UK British English:** Use British spelling (organised, recognise, behaviour, prioritise, etc.) and conventions throughout all output
+- **Rubric versioning:** Analyses before 22 April 2026 used the v1.3 rubric. The 10-point scale is preserved in v1.4, but two structural changes affect cross-version comparability:
+  1. **Finishing Focus (Step 1 right-to-left walk)** is now scored explicitly as criterion 2. Sessions that walked ageing-first (e.g. pace-percentile descending, or column-by-column from the left) will score lower under v1.4 than they would have under v1.3. This is intentional — the v1.4 standard defines right-to-left as the correct walk order, and the anti-pattern needs to show up in the score.
+  2. **Pattern Recognition & After-Party** and **Overall Health** have been merged into a single **Session Texture** criterion (criterion 10) that explicitly tests the two-events-shoved-together anti-pattern (chart narration followed by per-person status round).
+
+  Score-trajectory tables should note the rubric version change explicitly. A v1.3 score of 7.5 and a v1.4 score of 7.5 may describe sessions with different shapes — the v1.4 version prioritises finishing focus and integrated walk in ways the v1.3 rubric did not.
 
 ## Example Analyses
 
 See these example analyses for reference on output structure and level of detail:
-- `03-Pilot-Execution/Coaching-Sessions/Platform 2/Platform-2-Flow-Checkin-Analysis-20260227.md` (Score: 2.5/10 - Early)
-- `03-Pilot-Execution/Coaching-Sessions/C2C/C2C-Flow-Checkin-Analysis-20260302.md` (Score: 5.5/10 - Developing)
+- `03-Pilot-Execution/Coaching-Sessions/Platform 2/standups/Platform-2-Flow-Checkin-Analysis-20260227.md` (Score: 2.5/10 — Early, pre-v1.3 rubric)
+- `03-Pilot-Execution/Coaching-Sessions/C2C/standups/C2C-Flow-Checkin-Analysis-20260302.md` (Score: 5.5/10 — Developing, pre-v1.3 rubric)
+- `03-Pilot-Execution/Coaching-Sessions/Micro-Shippers/standups/Micro-Shippers-Flow-Checkin-Analysis-20260330.md` (Score: 6.5/10 — Good, pre-v1.3 rubric)
 
 These demonstrate:
 - How to structure evidence-based observations
 - Appropriate level of detail in coaching opportunities
 - How to use British English throughout
-- Progression from Early (2.5) to Developing (5.5) over 3 weeks of coaching
+- Progression across teams and facilitators
 
 ## Troubleshooting
 
@@ -195,12 +199,21 @@ These demonstrate:
 **Solution:** Score as not present (0 points). If it's not captured in the transcript, it either didn't happen or wasn't explicit enough to be observable.
 
 **Issue:** Team is very early in flow adoption
-**Solution:** Expect low scores (2-3/10). Focus coaching on 1-2 foundational practices (invisible work check, age-based walk) rather than overwhelming with all practices.
+**Solution:** Expect low scores (2–3/10). Focus coaching on 1–2 foundational practices (invisible work check, right-to-left walk) rather than overwhelming with all practices.
 
 **Issue:** Multiple things need improvement
-**Solution:** Prioritise 1-2 highest-impact coaching opportunities in "Key Priority for Next Session". Don't overwhelm the team.
+**Solution:** Prioritise 1–2 highest-impact coaching opportunities in "Key Priority for Next Session". Don't overwhelm the team.
+
+**Issue:** Facilitator walks ageing-first (pace-percentile descending or oldest-first)
+**Solution:** This is the v1.4 anti-pattern explicitly called out. Score criterion 2 (Finishing Focus) accordingly — typically 0.0 unless the last column was still surfaced early in the walk. Even strong facilitators frequently default to ageing-first; flag it in coaching and reference the v1.4 Step 1 wording.
+
+**Issue:** Session runs as a chart narration followed by a per-person status round
+**Solution:** This is the v1.4 two-events-shoved-together anti-pattern. Score criterion 10 (Session Texture) accordingly — typically 0.0 to 0.5. The structural elements may all be present but the practice has fragmented. Coach on integrating: each person contributes as their item is walked.
+
+**Issue:** Comparing scores across rubric versions
+**Solution:** The 10-point scale is preserved, but v1.4 scoring is stricter on finishing focus and session texture. When presenting score trajectories across the rubric change, note the version transition date (22 April 2026) and don't treat pre-v1.4 scores as directly comparable for those two criteria.
 
 ## References
 
-- **Flow Checkin.md** - The standards document defining all evaluation criteria
-- **references/flow-checkin-rubric.md** - Detailed scoring criteria and examples for each evaluation area
+- **Flow Check-In v1.4** — The standards document defining all evaluation criteria (`01-Client-Intelligence/Reference/Standards/Flow Checkin v1.4.md`)
+- **references/flow-checkin-rubric.md** — Detailed scoring criteria and examples for each evaluation area
